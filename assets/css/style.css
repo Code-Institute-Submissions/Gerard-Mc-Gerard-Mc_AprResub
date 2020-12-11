@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: blue;
+	background-color: black;
 }
 
 header {
@@ -121,7 +121,7 @@ video[poster] {
 	color: white;
 	box-sizing: border-box;
 	min-height: 100vh;
-	max-height: 100vh;
+	height: auto;
 }
 
 
@@ -165,10 +165,24 @@ audio {
 	margin: 0 !important;
 }
 
-figure {}
+figure {
+	width: 94%;
+}
 
 figcaption {
 	opacity: .9;
+}
+
+
+/* New album section styling */
+
+.home-music {
+	padding: 15vh 0;
+	background-image: url("../img/background-0200.jpg");
+	background-size: cover;
+	color: white;
+	box-sizing: border-box;
+	height: auto;
 }
 
 @media screen and (max-width: 1199px) {
@@ -185,6 +199,7 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
+	/* Critics lg size section styling */
 	.critics-text {
 		color: white;
 		display: inline-block;
@@ -195,6 +210,7 @@ figcaption {
 		font-size: 28px;
 		margin-bottom: 30px;
 	}
+	/* Live music and new album sections h2 styling */
 	.section-img-text h2 {
 		margin-top: 2vh !important;
 		font-size: 30px !important;
@@ -282,6 +298,14 @@ figcaption {
 		margin-left: 25%;
 		;
 	}
+	/* Live music and new album sections image and heading containers styling */
+	.section-img-text h2 {
+		margin-top: 2vh !important;
+		font-size: 20px !important;
+		letter-spacing: 3px !important;
+		text-align: center;
+		height: 50%;
+	}
 	/* Live music section styling */
 	.home-live {
 		padding: 5vh 0;
@@ -295,14 +319,6 @@ figcaption {
 		height: auto;
 		width: 100%;
 	}
-	/* Live music and new album sections image and heading containers styling */
-	.section-img-text h2 {
-		margin-top: 2vh !important;
-		font-size: 20px !important;
-		letter-spacing: 3px !important;
-		text-align: center;
-		height: 50%;
-	}
 	/* Live music audio players styling */
 	audio[controls] {
 		display: block;
@@ -310,21 +326,11 @@ figcaption {
 		margin: 0!important;
 		padding: 0!important;
 	}
-	/* Fixes a bootstrap padding and margin bug */
-	.row {
-		padding: 0;
-		margin: 0;
-	}
 	/* Styles audio players */
 	#audio-container div {
 		margin-top: 20px;
 		height: 50%;
 		overflow: scroll;
-	}
-	.home-live p {
-		margin-top: 20px;
-		text-align: center;
-		color: rgba(255, 255, 255, 0.62);
 	}
 	audio {
 		filter: brightness(.95) invert(100%) opacity(1);
@@ -337,10 +343,32 @@ figcaption {
 		padding: 0;
 		width: 70%;
 		margin-left: 15%;
+		margin-top: 5px;
 	}
 	figcaption {
 		margin: 0!important;
 		padding: 0!important;
 		opacity: .9;
+	}
+	/*scroll chevron indicator*/
+	.home-live p {
+		margin-top: 20px;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.62);
+	}
+	/* New album sections h2 + iframe styling */
+	.home-music {
+		padding: 5vh 0;
+	}
+	.section-img-text h2 span {
+		font-size: 30px;
+	}
+	iframe {
+		margin-top: 2vh;
+	}
+	/* Fixes a bootstrap padding and margin bug */
+	.row {
+		padding: 0;
+		margin: 0;
 	}
 }
