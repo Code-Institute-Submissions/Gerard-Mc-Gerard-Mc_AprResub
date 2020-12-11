@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: black;
+}
+
+
+/* Superimposes Logo + Nav on header video styling */
+
+h1 {
+	z-index: 2;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	min-width: 200px;
+	height: auto;
+}
+
+.navbar-collapse ul {
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+h1 img {
+	margin: 0 auto;
+	margin-top: 2vh;
+	max-height: 100px;
+	min-width: 300px;
+}
+
+h1 a img {
+	width: 100%;
+	align-content: center;
+}
+
+nav {
+	padding: 0;
+	z-index: 1;
+}
+
+nav ul li a {
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin: 2vw;
+	font-size: 1vw;
+}
+
+nav .navbar-collapse ul {}
+
+video {
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+video[poster] {
+	height: 100vh;
+	object-fit: cover;
+}
+
+.navbar-toggler {
+	background-color: #f4f4f4;
+	color: #c1c1c1;
+	border-radius: 0px;
+}
+
+.fa-bars {
+	padding-top: 15%;
+}
+
+@media screen and (max-width: 767px) {
+	nav button {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+	}
+	h1 {
+		position: absolute;
+		z-index: 2;
+		margin-top: 0;
+		padding-top: 0;
+		top: 24px;
+		left: 18px;
+		transform: translate(0%, 0%);
+	}
+	h1 img {
+		margin: 0;
+		padding: 0;
+		max-height: 70px;
+		width: 20vw;
+		min-width: 200px;
+	}
+	h1 img a {
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-collapse {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 100px;
+		background-color: rgba(128, 128, 128, 0.62);
+	}
+	.navbar-collapse ul {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-collapse ul li {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: right;
+	}
+	nav ul li a {
+		color: #ffffff;
+		font-weight: bold;
+		letter-spacing: 4px;
+		margin: 2vw;
+		font-size: 5vw;
+	}
+}
