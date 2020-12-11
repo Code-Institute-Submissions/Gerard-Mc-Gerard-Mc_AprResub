@@ -38,7 +38,11 @@
          </nav>
          <!-- Header Video Starts Here -->
          <div id="video-wrap">
-            <video  preload="none" poster="assets/img/header-optimised-0.jpg">
+            <video class="d-none d-md-block" controls preload="none" poster="assets/img/header-optimised-0.jpg">
+               <source  src="assets/video/video-header.mp4" type="video/mp4">
+               Your browser is uncompatible with HTML video
+            </video>
+            <video class="d-block d-md-none" controls preload="none" poster="assets/img/background-small.jpg">
                <source  src="assets/video/video-header.mp4" type="video/mp4">
                Your browser is uncompatible with HTML video
             </video>
@@ -47,8 +51,8 @@
       </header>
       <!-- Header Ends Here -->
       <!-- Critics Section Starts Here -->
-      <section class="container-fluid col-10 offset-xs-1 col-md-12">
-         <div class="container-fluid col-12 align-middle">
+      <section class="container-fluid critics col-10 offset-xs-1 col-md-12">
+         <div class="container-fluid critics-text col-12  align-middle">
             <h2>What the Press Say</h2>
             <p>
             <p><em>‘They do mark a turning point in folk… that authentic voice of the streets is back in a big way.’</em></p>
@@ -63,20 +67,22 @@
             <p>TradConnect</p>
             <p><em>‘Funny, compelling, engaging, exhilarating.’</em></p>
             <p>Songlines</p>
-             <p><em>‘Positively mesmerising and vital.’</em></p>
-            <p>fRoots</p>
-             <p><em>‘Harsh, but deeply affecting.’</em></p>
-            <p>Mojo</p>
-             <p><em>‘Battery-acid sharp.’ 8/10</em></p>
-            <p>Uncut</p>
+            <!--
+               <p><em>‘Positively mesmerising and vital.’</em></p>
+               <p>fRoots</p>
+               <p><em>‘Harsh, but deeply affecting.’</em></p>
+               <p>Mojo</p>
+               <p><em>‘Battery-acid sharp.’ 8/10</em></p>
+               <p>Uncut</p>
+               -->
          </div>
-       </section>
-
+      </section>
+      <!-- Critics Section Ends Here -->
       <!-- Live Music Section Starts Here -->
-      <section class="container-fluid col-12 ">
-         <div class="container-fluid row col-sm-12 align-middle">
-            <div class="col-12 col-sm-3 offset-sm-1 align-middle">
-               <img  src="#" class="">
+      <section class="container-fluid home-live col-12 ">
+         <div class="container-fluid home-live-content row  col-sm-12 align-middle ">
+            <div class="section-img-text col-12 col-sm-3 offset-sm-1 align-middle">
+               <img  src="assets/img/live-optimised.jpg" class="  section-img ">
                <h2>
                   LIVE AT<br>VICAR STREET<br>DUBLIN
                </h2>
@@ -153,15 +159,15 @@
       </section>
       <!-- Live Music Section Ends Here -->
       <!-- New Album Section Starts Here -->
-      <section  class="container-fluid col-12" >
-         <div class="container-fluid row col-sm-12 align-middle ">
-            <div class="col-12 col-sm-3 offset-sm-1 align-middle">
-               <img  src="#" class="">
+      <section  class="container-fluid home-music col-12" >
+         <div class="container-fluid row  home-music-content  col-sm-12 align-middle ">
+            <div class="section-img-text col-12 col-sm-3 offset-sm-1 align-middle">
+               <img  src="assets/img/album-optimised.jpg" class=" section-img  ">
                <h2>
                   LANKUM<br>THE LIVELONG<br>DAY
                </h2>
             </div>
-            <iframe class=" col-12 col-sm-5 order-sm-1 offset-sm-2 align-middle" src="#"></iframe>
+            <iframe class=" col-12 col-sm-5 order-sm-1 home-about-spotify offset-sm-2 align-middle" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" allow="encrypted-media"></iframe>
          </div>
       </section>
       <!-- New Album Section Ends Here -->
@@ -175,7 +181,7 @@
                <li class="list-inline-item"><a href="https://open.spotify.com/artist/2zPm4XzwKuPidtfKh92H2Z"><i class="fab fa-spotify"></i></a></li>
             </ul>
          </div>
-         <p class="d-block"> <span class="glyphicon glyphicon-copyright-mark text-center">&copy; Lankum 2020</span> </p>
+         <p class="d-block  "> <span class="glyphicon glyphicon-copyright-mark text-center">&copy; Lankum 2020</span> </p>
       </footer>
       <!-- Footer Ends Here -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -5,11 +5,12 @@
 }
 
 body {
-	background-color: black;
+	background-color: blue;
 }
 
-
-/* Superimposes Logo + Nav on header video styling */
+header {
+	height: 100vh;
+}
 
 h1 {
 	z-index: 2;
@@ -51,8 +52,6 @@ nav ul li a {
 	font-size: 1vw;
 }
 
-nav .navbar-collapse ul {}
-
 video {
 	width: 100%;
 	position: absolute;
@@ -72,6 +71,61 @@ video[poster] {
 
 .fa-bars {
 	padding-top: 15%;
+}
+
+
+/* Critics section styling */
+
+.critics {
+	padding: 10vh 0;
+	background-image: url("../img/night.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	height: auto;
+}
+
+
+/* Critics comments section text styling */
+
+.critics-text {
+	color: white;
+	display: inline-block;
+	text-align: center;
+	font-size: 26px;
+}
+
+.critics-text h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+	.critics-text {
+		color: white;
+		display: inline-block;
+		text-align: center;
+		font-size: 20px;
+	}
+	.critics-text h2 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.critics-text {
+		color: white;
+		display: inline-block;
+		text-align: center;
+		font-size: 18px;
+	}
+	.critics-text h2 {
+		font-size: 28px;
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -123,5 +177,27 @@ video[poster] {
 		letter-spacing: 4px;
 		margin: 2vw;
 		font-size: 5vw;
+	}
+	/* Critics section styling */
+	.critics {
+		padding: 10vh 0;
+		background-image: url("../img/night.jpg");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-sizing: border-box;
+		height: auto;
+	}
+	/* Critics comments section text styling */
+	.critics-text {
+		color: white;
+		display: inline-block;
+		text-align: center;
+		font-size: 16px;
+	}
+	.critics-text h2 {
+		font-size: 26px;
+		margin-bottom: 30px;
 	}
 }
