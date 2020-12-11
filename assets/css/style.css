@@ -102,6 +102,75 @@ video[poster] {
 	margin-bottom: 30px;
 }
 
+
+/* Live music and new album sections images styling */
+
+.section-img {
+	object-fit: cover;
+	width: 100%;
+	display: inline-block;
+}
+
+
+/* Live music section styling */
+
+.home-live {
+	padding: 15vh 0;
+	background-image: url("../img/background-00-dark.jpg");
+	background-size: cover;
+	color: white;
+	box-sizing: border-box;
+	min-height: 100vh;
+	max-height: 100vh;
+}
+
+
+/* Live music and new album sections image and heading containers styling */
+
+.section-img-text h2 {
+	margin-top: 2vh!important;
+	font-size: 3.5em!important;
+	letter-spacing: 3px!important;
+}
+
+#audio-container div {
+	padding: 0;
+	border: 0;
+}
+
+
+/* Live music audio players styling */
+
+audio[controls] {
+	display: block;
+	margin: 10px auto;
+}
+
+
+/* Fixes a bootstrap padding and margin bug */
+
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Styles audio players */
+
+audio {
+	filter: brightness(.95)invert(100%) opacity(1);
+	width: 100%;
+	height: 5vh;
+	background-color: #f1f3f4;
+	margin: 0 !important;
+}
+
+figure {}
+
+figcaption {
+	opacity: .9;
+}
+
 @media screen and (max-width: 1199px) {
 	.critics-text {
 		color: white;
@@ -125,6 +194,12 @@ video[poster] {
 	.critics-text h2 {
 		font-size: 28px;
 		margin-bottom: 30px;
+	}
+	.section-img-text h2 {
+		margin-top: 2vh !important;
+		font-size: 30px !important;
+		letter-spacing: 3px !important;
+		line-height: 1.6;
 	}
 }
 
@@ -199,5 +274,73 @@ video[poster] {
 	.critics-text h2 {
 		font-size: 26px;
 		margin-bottom: 30px;
+	}
+	/* Live music and new album sections images styling */
+	.section-img {
+		object-fit: cover;
+		width: 50%;
+		margin-left: 25%;
+		;
+	}
+	/* Live music section styling */
+	.home-live {
+		padding: 5vh 0;
+		background-image: url("../img/background-00-dark.jpg");
+		background-size: cover;
+		color: white;
+		box-sizing: border-box;
+		max-height: 100vh;
+	}
+	.section-img-text {
+		height: auto;
+		width: 100%;
+	}
+	/* Live music and new album sections image and heading containers styling */
+	.section-img-text h2 {
+		margin-top: 2vh !important;
+		font-size: 20px !important;
+		letter-spacing: 3px !important;
+		text-align: center;
+		height: 50%;
+	}
+	/* Live music audio players styling */
+	audio[controls] {
+		display: block;
+		margin: 10px auto;
+		margin: 0!important;
+		padding: 0!important;
+	}
+	/* Fixes a bootstrap padding and margin bug */
+	.row {
+		padding: 0;
+		margin: 0;
+	}
+	/* Styles audio players */
+	#audio-container div {
+		margin-top: 20px;
+		height: 50%;
+		overflow: scroll;
+	}
+	.home-live p {
+		margin-top: 20px;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.62);
+	}
+	audio {
+		filter: brightness(.95) invert(100%) opacity(1);
+		height: 5vh;
+		background-color: #f1f3f4;
+		margin: 0 !important;
+	}
+	figure {
+		margin: 0;
+		padding: 0;
+		width: 70%;
+		margin-left: 15%;
+	}
+	figcaption {
+		margin: 0!important;
+		padding: 0!important;
+		opacity: .9;
 	}
 }
