@@ -10,10 +10,10 @@
       <link rel="stylesheet" href="assets/css/style.css">
       <title>Lankum</title>
    </head>
-   <body>
+   <body data-spy="scroll" data-target=".navbar" data-offset="0">
       <nav id="main-nav" class="navbar navbar-expand-md sticky-top">
          <div class="navbar-header d-md-none">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png"></a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
          </div>
          <!-- Nav Button -->
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse">
@@ -21,14 +21,14 @@
          </button>
          <div  class="collapse navbar-collapse " id="navCollapse">
             <ul id="nav-change" class="navbar-nav">
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Live</a>
+               <li  class="nav-item">
+                  <a class="nav-link" href="#live">Live</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Music</a>
+                  <a class="nav-link" href="#music">Music</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="https://www.amazon.co.uk/CDs-Vinyl-Lankum/s?rh=n%3A229816%2Cp_32%3ALankum">Shop</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#">Contact</a>
@@ -38,17 +38,17 @@
       </nav>
       <header>
          <!-- Header Starts Here -->
-         <h1 class="d-none d-md-block"><a href="index.html"></a><img src="assets/img/logo-white.png"></h1>
+         <h1 class="d-none d-md-block"><a href="index.html"></a><img src="assets/img/logo-white.png" alt="Lankum Logo"></h1>
          <!-- Header Image Starts Here -->
-         <img src="assets/img/header-optimised-0.jpg" class="d-none d-md-block header-img" >
-         <img src="assets/img/background-small.jpg" class="d-block d-md-none header-img" >
+         <img src="assets/img/header-optimised-0.jpg" class="d-none d-md-block header-img" alt="Lankum band image" >
+         <img src="assets/img/header-optimised-0.jpg" class="d-block d-md-none header-img" alt="Lankum band image" >
          <!-- Header Image Ends Here -->
       </header>
       <!-- Header Ends Here -->
       <!-- Critics Section Starts Here -->
       <section class="container-fluid critics col-12">
          <div class="container-fluid critics-text col-12  align-middle">
-            <h2>What the Press Say</h2>
+            <h2><span>LANKUM</span><br>The Live Long Day</h2>
             <p>
             <p><em>‘They do mark a turning point in folk… that authentic voice of the streets is back in a big way.’</em></p>
             <p>Mark Radcliffe</p>
@@ -58,26 +58,18 @@
             <p>The Guardian</p>
             <p><em>‘An object lesson in how to perform old songs in new ways.’</em></p>
             <p>The Independent</p>
-            <p><em>‘The most exciting album of traditional Irish song in decades.’</em></p>
-            <p>TradConnect</p>
-            <p><em>‘Funny, compelling, engaging, exhilarating.’</em></p>
-            <p>Songlines</p>
-            <!--
-               <p><em>‘Positively mesmerising and vital.’</em></p>
-               <p>fRoots</p>
-               <p><em>‘Harsh, but deeply affecting.’</em></p>
-               <p>Mojo</p>
-               <p><em>‘Battery-acid sharp.’ 8/10</em></p>
-               <p>Uncut</p>
-               -->
+            <p class="d-none d-sm-block"><em>‘The most exciting album of traditional Irish song in decades.’</em></p>
+            <p class="d-none d-sm-block">TradConnect</p>
+            <p class="d-none d-sm-block"><em>‘Funny, compelling, engaging, exhilarating.’</em></p>
+            <p class="d-none d-sm-block">Songlines</p>
          </div>
       </section>
       <!-- Critics Section Ends Here -->
       <!-- Live Music Section Starts Here -->
-      <section class="container-fluid home-live col-12 ">
+      <section id="live" class="container-fluid home-live col-12 ">
          <div class="container-fluid home-live-content row col-sm-12 align-middle ">
             <div class="section-img-text col-12 col-md-3 offset-md-1 align-middle">
-               <img  src="assets/img/live-optimised.jpg" class="  section-img col-12">
+               <img  src="assets/img/live-optimised.jpg" class="  section-img col-12" alt="Lankum band at Vicar Street image" >
                <h2 class="col-12">
                   LIVE AT<br>VICAR STREET<br>DUBLIN
                </h2>
@@ -157,10 +149,10 @@
       </section>
       <!-- Live Music Section Ends Here -->
       <!-- New Album Section Starts Here -->
-      <section  class="container-fluid home-music col-12" >
+      <section id="music"  class="container-fluid home-music col-12" >
          <div class="container-fluid row  home-music-content  col-sm-12 align-middle ">
             <div class="section-img-text col-12 col-md-3 offset-md-1 align-middle">
-               <img  src="assets/img/album-optimised.jpg" class=" section-img  ">
+               <img  src="assets/img/album-optimised.jpg" class=" section-img" alt="Lankum: The Live Long Day album cover" >
                <h2>
                   <span>LANKUM</span><br>THE LIVELONG<br>DAY
                </h2>
