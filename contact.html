@@ -10,12 +10,10 @@
       <link rel="stylesheet" href="assets/css/style.css">
       <title>Lankum</title>
    </head>
-    
-    
-    <body data-spy="scroll" data-target=".navbar" data-offset="0">
-      <nav id="main-nav" class="navbar navbar-expand-md sticky-top">
+   <body id="contact-body" data-spy="scroll" data-target=".navbar" data-offset="0">
+      <nav id="main-nav" class="navbar navbar-expand-md ">
          <div class="navbar-header d-md-none">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
          </div>
          <!-- Nav Button -->
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse">
@@ -38,11 +36,28 @@
             </ul>
          </div>
       </nav>
-    <!-- Footer Starts Here -->
-        
-        <h1 class="d-none d-md-block"><a href="index.html"></a><img src="assets/img/logo-white.png" alt="Lankum Logo"></h1>
-        
-        
+      <h2 class="d-none d-md-block"><a href="index.html"></a><img src="assets/img/logo-white.png" alt="Lankum Logo"></h2>
+      <img src="assets/img/background-00-dark.jpg" class="contact-header-img" alt="Lankum band image" >
+      <section id="contact-text">
+         <div id="above-form-text" class="container col-12 ">
+            <h1 class="container col-12 ">Contact</h1>
+            <p class="container col-10 col-md-6">To book us for a show or press inquiries, please contact us at <a href="mailto:#">lankum@nowhere.ie</a> or use the form below.</p>
+         </div>
+      </section>
+      <section id="contact-section" class="container-fluid  col-12">
+         <form class="container-fluid col-12 col-md-8 " action="#" name="emailform" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="name" name="name" placeholder="Your first name..">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Your surname..">
+            <label style="display: block;" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+            <label style="display: block;" for="subject">Your Query</label>
+            <textarea id="subject" name="subject" placeholder="How can we help.." style="height:170px"></textarea>
+            <input class="form-btn" type="submit" name="submit" value="Submit">
+         </form>
+      </section>
+      <!-- Footer Starts Here -->
       <footer class="container-fluid  ">
          <div class="d-flex justify-content-center">
             <ul class="list-inline-item align-middle" >
@@ -58,29 +73,5 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script>
-         window.onscroll = function() {scrollFunction()};
-         
-         function scrollFunction() {
-           if (document.body.scrollTop > 40|| document.documentElement.scrollTop > 40) {
-         
-             document.getElementById("main-nav").style.backgroundColor = "black";
-         
-             document.getElementById("nav-change").style.marginTop = "5px";
-         
-           
-         
-           } else {
-         
-          document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0)";
-         
-             document.getElementById("nav-change").style.marginTop = "100px";
-         
-           }
-         
-         }
-      </script>
-       
    </body>
-        
 </html>

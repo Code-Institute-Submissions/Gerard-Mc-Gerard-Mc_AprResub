@@ -15,7 +15,7 @@ header {
 }
 
 h1 {
-	z-index: 2;
+	z-index: 1;
 	position: absolute;
 	top: 10px;
 	left: 50%;
@@ -209,6 +209,7 @@ figcaption {
 footer {
 	background-color: black;
 	color: white;
+	bottom: 0;
 }
 
 footer ul {
@@ -225,6 +226,105 @@ footer ul li a {
 
 footer p {
 	text-align: center;
+}
+
+
+/* contact page styling starts here */
+
+.contact-header-img {
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	height: 60vh;
+}
+
+#contact-body #navCollapse {
+	background-color: rgba(240, 248, 255, 0);
+}
+
+#contact-body h2 img {
+	margin: 0 auto;
+	margin-top: 2vh;
+	max-height: 100px;
+	min-width: 300px;
+}
+
+#contact-body h2 img a {
+	width: 100%;
+	align-content: center;
+}
+
+#contact-body h2 {
+	z-index: 2;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	min-width: 200px;
+	height: auto;
+}
+
+#contact-section {
+	height: 500px!important;
+}
+
+#contact-text {
+	height: 500px!important;
+}
+
+#above-form-text {
+	position: absolute;
+	color: white;
+	text-align: center;
+	height: 500px;
+}
+
+#above-form-text h1 {
+	top: 50px;
+	font-size: 60px;
+	letter-spacing: 5px;
+}
+
+#above-form-text p {
+	top: 80px;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+
+#contact-body section {
+	height: 900px;
+}
+
+form {
+	background-color: rgba(22, 22, 67, 0.36);
+	padding: 0 6vw;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+label {
+	color: white;
+	margin-top: 20px;
+}
+
+
+/* Style inputs */
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	margin-top: 7px;
+	margin-bottom: 4px;
+}
+
+input[type=submit] {
+	background-color: rgb(124, 124, 150);
+	color: white;
+	padding: 15px 22px;
+	border: none;
 }
 
 @media screen and (max-width: 1199px) {
@@ -450,6 +550,60 @@ footer p {
 		margin: 0 2vw;
 		color: #c4c4c4;
 		font-size: 30px;
+	}
+	/* contact page styling */
+	#contact-body h2 img {
+		margin: 0;
+		padding: 0;
+		max-height: 70px;
+		width: 20vw;
+		min-width: 200px;
+	}
+	#contact-body h2 img a {
+		margin: 0;
+		padding: 0;
+	}
+	#contact-body h2 {
+		position: absolute;
+		z-index: 2;
+		margin-top: 0;
+		padding-top: 0;
+		top: 24px;
+		left: 18px;
+		transform: translate(0%, 0%);
+	}
+	#contact-section {
+		margin: 0;
+		padding: 0;
+	}
+	#contact-section {
+		height: 500px!important;
+	}
+	#contact-text {
+		height: 400px!important;
+	}
+	#above-form-text {
+		position: absolute;
+		color: white;
+		text-align: center;
+		height: 500px;
+	}
+	#above-form-text h1 {
+		top: 100px;
+		left: 0;
+		font-size: 50px;
+		letter-spacing: 0px;
+	}
+	#above-form-text p {
+		top: 120px;
+		font-size: 15px;
+		letter-spacing: 5px;
+	}
+	#contact-body section {
+		height: 900px;
+	}
+	#contact-body footer {
+		margin-top: 100px;
 	}
 	/* Fixes a bootstrap padding and margin bug */
 	.row {
