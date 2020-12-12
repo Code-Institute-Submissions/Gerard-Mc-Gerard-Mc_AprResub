@@ -26,6 +26,16 @@ h1 {
 	margin: 0 auto;
 	margin-top: 100px;
 }
+/* animates navbar javascript scroll function */
+#nav-change {
+	margin: 0 auto;
+	margin-top: 100px;
+	transition: margin-top .2s;
+}
+
+#main-nav {
+	background-color: rgba(0, 0, 0, 0);
+}
 
 h1 img {
 	margin: 0 auto;
@@ -40,6 +50,8 @@ h1 a img {
 }
 
 nav {
+	position: absolute;
+	top: 0;
 	padding: 0;
 	z-index: 1;
 }
@@ -49,18 +61,19 @@ nav ul li a {
 	font-weight: bold;
 	letter-spacing: 5px;
 	margin: 2vw;
-	font-size: 1vw;
+	font-size: 20px;
 }
 
-video {
+.header-img {
 	width: 100%;
+	object-fit: cover;
 	position: absolute;
 	top: 0;
+	height: 100vh;
 }
 
-video[poster] {
+header {
 	height: 100vh;
-	object-fit: cover;
 }
 
 .navbar-toggler {
@@ -121,7 +134,7 @@ video[poster] {
 	color: white;
 	box-sizing: border-box;
 	min-height: 100vh;
-	height: auto;
+	max-height: 100vh;
 }
 
 
@@ -185,6 +198,27 @@ figcaption {
 	height: auto;
 }
 
+footer {
+	background-color: black;
+	color: white;
+}
+
+footer ul {
+	display: block;
+	padding: 8vh 0;
+	margin-top: 5vh;
+}
+
+footer ul li a {
+	margin: 0 2vw;
+	color: #c4c4c4;
+	font-size: 50px;
+}
+
+footer p {
+	text-align: center;
+}
+
 @media screen and (max-width: 1199px) {
 	.critics-text {
 		color: white;
@@ -245,33 +279,55 @@ figcaption {
 		margin: 0;
 		padding: 0;
 	}
+	header {
+		height: auto;
+	}
+	.header-img {
+		width: 100%;
+		object-fit: cover;
+		position: relative;
+		top: -20px;
+		height: auto;
+	}
 	.navbar-collapse {
 		width: 100%;
-		margin: 0 auto;
-		margin-top: 100px;
-		background-color: rgba(128, 128, 128, 0.62);
+		position: absolute;
+		top: 105px;
+		right: 0;
+		height: 100vh;
+		background-color: rgba(128, 128, 128, 0.93);
 	}
 	.navbar-collapse ul {
 		width: 100%;
 		margin: 0;
+		height: 50%;
 		padding: 0;
 	}
 	.navbar-collapse ul li {
 		width: 100%;
 		margin: 0;
 		padding: 0;
-		text-align: right;
+		text-align: center;
+	}
+	.navbar-header {
+		position: absolute;
+		top: 20px;
+	}
+	.navbar-header a img {
+		width: 40%;
+		z-index: 2;
 	}
 	nav ul li a {
 		color: #ffffff;
 		font-weight: bold;
 		letter-spacing: 4px;
-		margin: 2vw;
-		font-size: 5vw;
+		margin: 5vw;
+		font-size: 25px;
 	}
 	/* Critics section styling */
 	.critics {
-		padding: 10vh 0;
+		padding: 0 2vh;
+		margin: 0;
 		background-image: url("../img/night.jpg");
 		background-attachment: fixed;
 		background-position: center;
@@ -282,6 +338,9 @@ figcaption {
 	}
 	/* Critics comments section text styling */
 	.critics-text {
+		width: 90%;
+		margin-left: 5%;
+		;
 		color: white;
 		display: inline-block;
 		text-align: center;
@@ -365,6 +424,11 @@ figcaption {
 	}
 	iframe {
 		margin-top: 2vh;
+	}
+	footer ul li a {
+		margin: 0 2vw;
+		color: #c4c4c4;
+		font-size: 30px;
 	}
 	/* Fixes a bootstrap padding and margin bug */
 	.row {
