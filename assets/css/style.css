@@ -327,6 +327,32 @@ input[type=submit] {
 	border: none;
 }
 
+
+/* Tour Text starts here */
+
+#tour {
+	height: 500px!important;
+}
+
+#tour-text {
+	position: absolute;
+	color: white;
+	text-align: center;
+	height: 500px;
+}
+
+#tour-text h1 {
+	top: 50px;
+	font-size: 60px;
+	letter-spacing: 5px;
+}
+
+#tour-text p {
+	top: 80px;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+
 @media screen and (max-width: 1199px) {
 	.critics-text {
 		color: white;
@@ -494,8 +520,8 @@ input[type=submit] {
 		color: white;
 		box-sizing: border-box;
 		min-height: 100vh;
-        height: 800px;
-        
+		height: 900px;
+		padding-top: 15vh;
 	}
 	.section-img-text {
 		height: auto;
@@ -541,6 +567,7 @@ input[type=submit] {
 	/* New album sections h2 + iframe styling */
 	.home-music {
 		padding: 5vh 0;
+		padding-top: 15vh;
 	}
 	.section-img-text h2 span {
 		font-size: 30px;
@@ -606,6 +633,27 @@ input[type=submit] {
 	}
 	#contact-body footer {
 		margin-top: 100px;
+	}
+	/*tour styling starts here */
+	#tour {
+		height: 400px!important;
+	}
+	#tour-text {
+		position: absolute;
+		color: white;
+		text-align: center;
+		height: 500px;
+	}
+	#tour-text h1 {
+		top: 200px;
+		left: 0;
+		font-size: 50px;
+		letter-spacing: 0px;
+	}
+	#tour-text p {
+		top: 220px;
+		font-size: 15px;
+		letter-spacing: 5px;
 	}
 	/* Fixes a bootstrap padding and margin bug */
 	.row {
