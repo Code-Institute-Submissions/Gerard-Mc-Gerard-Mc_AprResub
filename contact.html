@@ -1,613 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-family: 'Averia Serif Libre', cursive;
-}
-
-body {
-	background-color: black;
-}
-
-header {
-	height: 100vh;
-}
-
-h1 {
-	z-index: 1;
-	position: absolute;
-	top: 10px;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	min-width: 200px;
-	height: auto;
-}
-
-.navbar-collapse ul {
-	margin: 0 auto;
-	margin-top: 100px;
-}
-
-#nav-change {
-	margin: 0 auto;
-	margin-top: 100px;
-	transition: margin-top .2s;
-}
-
-#main-nav {
-	padding: 0;
-	background-color: rgba(0, 0, 0, 0);
-}
-
-h1 img {
-	margin: 0 auto;
-	margin-top: 2vh;
-	max-height: 100px;
-	min-width: 300px;
-}
-
-h1 a img {
-	width: 100%;
-	align-content: center;
-}
-
-nav {
-	position: absolute;
-	top: 0;
-	padding: 0;
-	z-index: 1;
-}
-
-nav ul li a {
-	color: #ffffff;
-	font-weight: bold;
-	letter-spacing: 5px;
-	margin: 2vw;
-	font-size: 20px;
-}
-
-.header-img {
-	width: 100%;
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-	height: 100vh;
-}
-
-header {
-	height: 100vh;
-}
-
-.navbar-toggler {
-	top: 22px;
-	background-color: #f4f4f4;
-	color: #c1c1c1;
-	border-radius: 0px;
-}
-
-.fa-bars {
-	padding-top: 15%;
-}
-
-h2 span {
-	font-size: 75px;
-}
-
-
-/* Critics section styling */
-
-.critics {
-	padding: 10vh 0;
-	background-image: url("../img/night.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	box-sizing: border-box;
-	height: auto;
-}
-
-
-/* Critics comments section text styling */
-
-.critics-text {
-	color: white;
-	display: inline-block;
-	text-align: center;
-	font-size: 26px;
-}
-
-.critics-text h2 {
-	font-size: 36px;
-	margin-bottom: 50px;
-}
-
-
-/* Live music and new album sections images styling */
-
-.section-img {
-	object-fit: cover;
-	width: 100%;
-	display: inline-block;
-}
-
-
-/* Live music section styling */
-
-.home-live {
-	padding: 15vh 0;
-	background-image: url("../img/background-00-dark.jpg");
-	background-size: cover;
-	color: white;
-	box-sizing: border-box;
-	min-height: 100vh;
-	max-height: 100vh;
-}
-
-
-/* Live music and new album sections image and heading containers styling */
-
-.section-img-text h2 {
-	margin-top: 2vh!important;
-	font-size: 3.5em!important;
-	letter-spacing: 3px!important;
-}
-
-#audio-container div {
-	padding: 0;
-	border: 0;
-}
-
-
-/* Live music audio players styling */
-
-audio[controls] {
-	display: block;
-	margin: 10px auto;
-}
-
-
-/* Fixes a bootstrap padding and margin bug */
-
-.row {
-	padding: 0;
-	margin: 0;
-}
-
-
-/* Styles audio players */
-
-audio {
-	filter: brightness(.95)invert(100%) opacity(1);
-	width: 100%;
-	height: 5vh;
-	background-color: #f1f3f4;
-	margin: 0 !important;
-}
-
-figure {
-	width: 94%;
-}
-
-figcaption {
-	opacity: .9;
-}
-
-
-/* New album section styling */
-
-.home-music {
-	padding: 15vh 0;
-	background-image: url("../img/background-0200.jpg");
-	background-size: cover;
-	color: white;
-	box-sizing: border-box;
-	height: auto;
-}
-
-footer {
-	background-color: black;
-	color: white;
-	bottom: 0;
-}
-
-footer ul {
-	display: block;
-	padding: 8vh 0;
-	margin-top: 5vh;
-}
-
-footer ul li a {
-	margin: 0 2vw;
-	color: #c4c4c4;
-	font-size: 50px;
-}
-
-footer p {
-	text-align: center;
-}
-
-
-/* contact page styling starts here */
-
-.contact-header-img {
-	width: 100%;
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-	height: 650px;
-}
-
-#contact-body #navCollapse {
-	background-color: rgba(240, 248, 255, 0);
-}
-
-#contact-body h2 img {
-	margin: 0 auto;
-	margin-top: 2vh;
-	max-height: 100px;
-	min-width: 300px;
-}
-
-#contact-body h2 img a {
-	width: 100%;
-	align-content: center;
-}
-
-#contact-body h2 {
-	z-index: 2;
-	position: absolute;
-	top: 10px;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	min-width: 200px;
-	height: auto;
-}
-
-#contact-section {
-	height: 600px!important;
-}
-
-#contact-text {
-	height: 500px!important;
-}
-
-#above-form-text {
-	position: absolute;
-	color: white;
-	text-align: center;
-	height: 500px;
-}
-
-#above-form-text h1 {
-	top: 50px;
-	font-size: 60px;
-	letter-spacing: 5px;
-}
-
-#above-form-text p {
-	top: 80px;
-	font-size: 20px;
-	letter-spacing: 5px;
-}
-
-#contact-body section {
-	height: 900px;
-}
-
-form {
-	background-color: rgb(0, 0, 0);
-	padding: 0 6vw;
-	border-style: solid;
-	border-radius: 5px;
-}
-
-label {
-	color: white;
-	margin-top: 20px;
-}
-
-
-/* Style inputs */
-
-input[type=text],
-select,
-textarea {
-	width: 100%;
-	padding: 12px;
-	margin-top: 7px;
-	margin-bottom: 4px;
-}
-
-input[type=submit] {
-	background-color: rgb(124, 124, 150);
-	color: white;
-	padding: 15px 22px;
-	border: none;
-}
-
-@media screen and (max-width: 1199px) {
-	.critics-text {
-		color: white;
-		display: inline-block;
-		text-align: center;
-		font-size: 20px;
-	}
-	.critics-text h2 {
-		font-size: 30px;
-		margin-bottom: 30px;
-	}
-}
-
-@media screen and (max-width: 991px) {
-	/* Critics lg size section styling */
-	.critics-text {
-		color: white;
-		display: inline-block;
-		text-align: center;
-		font-size: 18px;
-	}
-	.critics-text h2 {
-		font-size: 28px;
-		margin-bottom: 30px;
-	}
-	/* Live music and new album sections h2 styling */
-	.section-img-text h2 {
-		margin-top: 2vh !important;
-		font-size: 30px !important;
-		letter-spacing: 3px !important;
-		line-height: 1.6;
-	}
-	h2 span {
-		font-size: 65px;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	nav button {
-		position: absolute;
-		right: 30px;
-		top: 30px;
-	}
-	h1 {
-		position: absolute;
-		z-index: 2;
-		margin-top: 0;
-		padding-top: 0;
-		top: 24px;
-		left: 18px;
-		transform: translate(0%, 0%);
-	}
-	h1 img {
-		margin: 0;
-		padding: 0;
-		max-height: 70px;
-		width: 20vw;
-		min-width: 200px;
-	}
-	h1 img a {
-		margin: 0;
-		padding: 0;
-	}
-	header {
-		height: auto;
-	}
-	.header-img {
-		width: 100%;
-		object-fit: cover;
-		position: relative;
-		top: 20px;
-		height: 60vh;
-	}
-	.navbar-collapse {
-		width: 100%;
-		position: absolute;
-		top: 85px;
-		right: 0;
-		height: 100vh;
-		height: 120vh;
-		background-color: rgb(62, 62, 62) !important;
-	}
-	.navbar-collapse ul {
-		width: 100%;
-		margin: 0;
-		height: 50%;
-		padding: 0;
-	}
-	.navbar-collapse ul li {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-	}
-	.navbar-header {
-		position: absolute;
-		top: 0px;
-	}
-	.navbar-header a img {
-		width: 40%;
-		z-index: 2;
-	}
-	/*styles navbar at sm and xs */
-	.navbar-brand {
-		width: 100%;
-		padding: 20px 0;
-		background-color: rgb(62, 62, 62) !important;
-	}
-	.navbar-brand img {
-		margin-left: 10px;
-	}
-	nav ul li a {
-		color: #ffffff;
-		font-weight: bold;
-		letter-spacing: 4px;
-		margin: 5vw;
-		font-size: 25px;
-	}
-	/* Critics section styling */
-	.critics {
-		padding: 5vh 0;
-		margin: 0;
-		background-image: url("../img/night.jpg");
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		box-sizing: border-box;
-		height: auto;
-	}
-	/* Critics comments section text styling */
-	.critics-text {
-		width: 90%;
-		margin-left: 5%;
-		;
-		color: white;
-		display: inline-block;
-		text-align: center;
-		font-size: 16px;
-	}
-	.critics-text h2 {
-		font-size: 30px;
-		margin-bottom: 30px;
-	}
-	/* Live music and new album sections images styling */
-	.section-img {
-		object-fit: cover;
-		width: 50%;
-		margin-left: 25%;
-		;
-	}
-	/* Live music and new album sections image and heading containers styling */
-	.section-img-text h2 {
-		margin-top: 2vh !important;
-		font-size: 20px !important;
-		letter-spacing: 3px !important;
-		text-align: center;
-		height: 50%;
-	}
-	/* Live music section styling */
-	.home-live {
-		padding: 5vh 0;
-		background-image: url("../img/background-00-dark.jpg");
-		background-size: cover;
-		color: white;
-		box-sizing: border-box;
-		max-height: 100vh;
-	}
-	.section-img-text {
-		height: auto;
-		width: 100%;
-	}
-	/* Live music audio players styling */
-	audio[controls] {
-		display: block;
-		margin: 10px auto;
-		margin: 0!important;
-		padding: 0!important;
-	}
-	/* Styles audio players */
-	#audio-container div {
-		margin-top: 20px;
-		height: 50%;
-		overflow: scroll;
-	}
-	audio {
-		filter: brightness(.95) invert(100%) opacity(1);
-		height: 5vh;
-		background-color: #f1f3f4;
-		margin: 0 !important;
-	}
-	figure {
-		margin: 0;
-		padding: 0;
-		width: 70%;
-		margin-left: 15%;
-		margin-top: 5px;
-	}
-	figcaption {
-		margin: 0!important;
-		padding: 0!important;
-		opacity: .9;
-	}
-	/*scroll chevron indicator*/
-	.home-live p {
-		margin-top: 20px;
-		text-align: center;
-		color: rgba(255, 255, 255, 0.62);
-	}
-	/* New album sections h2 + iframe styling */
-	.home-music {
-		padding: 5vh 0;
-	}
-	.section-img-text h2 span {
-		font-size: 30px;
-	}
-	iframe {
-		margin-top: 2vh;
-	}
-	footer ul li a {
-		margin: 0 2vw;
-		color: #c4c4c4;
-		font-size: 30px;
-	}
-	/* contact page styling */
-	#contact-body h2 img {
-		margin: 0;
-		padding: 0;
-		max-height: 70px;
-		width: 20vw;
-		min-width: 200px;
-	}
-	#contact-body h2 img a {
-		margin: 0;
-		padding: 0;
-	}
-	#contact-body h2 {
-		position: absolute;
-		z-index: 2;
-		margin-top: 0;
-		padding-top: 0;
-		top: 24px;
-		left: 18px;
-		transform: translate(0%, 0%);
-	}
-	#contact-section {
-		margin: 0;
-		padding: 0;
-	}
-	#contact-section {
-		height: 500px!important;
-	}
-	#contact-text {
-		height: 400px!important;
-	}
-	#above-form-text {
-		position: absolute;
-		color: white;
-		text-align: center;
-		height: 500px;
-	}
-	#above-form-text h1 {
-		top: 130px;
-		left: 0;
-		font-size: 50px;
-		letter-spacing: 0px;
-	}
-	#above-form-text p {
-		top: 150px;
-		font-size: 15px;
-		letter-spacing: 5px;
-	}
-	#contact-body section {
-		height: 900px;
-	}
-	#contact-body footer {
-		margin-top: 100px;
-	}
-	/* Fixes a bootstrap padding and margin bug */
-	.row {
-		padding: 0;
-		margin: 0;
-	}
-}
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+         crossorigin="anonymous" />
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>Lankum</title>
+   </head>
+   <body id="contact-body" data-spy="scroll" data-target=".navbar" data-offset="0">
+      <nav id="main-nav" class="navbar navbar-expand-md ">
+         <div class="navbar-header d-md-none">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
+         </div>
+         <!-- Nav Button -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse">
+         <span class="navbar-toggler-icon fas fa-bars fa-1x"></span>
+         </button>
+         <div  class="collapse navbar-collapse " id="navCollapse">
+            <ul id="nav-change" class="navbar-nav">
+               <li  class="nav-item">
+                  <a class="nav-link" href="index.html#live">Live</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html#music">Music</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" target="_blank"  href="https://www.amazon.co.uk/CDs-Vinyl-Lankum/s?rh=n%3A229816%2Cp_32%3ALankum">Shop</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <h2 class="d-none d-md-block"><a href="index.html"></a><img src="assets/img/logo-white.png" alt="Lankum Logo"></h2>
+      <img src="assets/img/background-00-dark.jpg" class="contact-header-img" alt="Lankum band image" >
+      <section id="contact-text">
+         <div id="above-form-text" class="container col-12 ">
+            <h1 class="container col-12 ">Contact</h1>
+            <p class="container col-10 col-md-6">To book us for a show or press inquiries, please contact us at <a href="mailto:#">lankum@nowhere.ie</a> or use the form below.</p>
+         </div>
+      </section>
+      <section id="contact-section" class="container-fluid  col-12">
+         <form class="container-fluid col-12 col-md-8 " action="#" name="emailform" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="name" name="name" placeholder="Your first name..">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Your surname..">
+            <label style="display: block;" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+            <label style="display: block;" for="subject">Your Query</label>
+            <textarea id="subject" name="subject" placeholder="How can we help.." style="height:170px"></textarea>
+            <input class="form-btn" type="submit" name="submit" value="Submit">
+         </form>
+      </section>
+      <!-- Footer Starts Here -->
+      <footer class="container-fluid  ">
+         <div class="d-flex justify-content-center">
+            <ul class="list-inline-item align-middle" >
+               <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+               <li class="list-inline-item"><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+               <li class="list-inline-item"><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+               <li class="list-inline-item"><a href="https://open.spotify.com/artist/2zPm4XzwKuPidtfKh92H2Z"><i class="fab fa-spotify"></i></a></li>
+            </ul>
+         </div>
+         <p class="d-block"> <span class="glyphicon glyphicon-copyright-mark text-center">&copy; Lankum 2020</span> </p>
+      </footer>
+      <!-- Footer Ends Here -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>
