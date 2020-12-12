@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-family: 'Averia Serif Libre', cursive;
 }
 
 body {
@@ -26,7 +28,7 @@ h1 {
 	margin: 0 auto;
 	margin-top: 100px;
 }
-/* animates navbar javascript scroll function */
+
 #nav-change {
 	margin: 0 auto;
 	margin-top: 100px;
@@ -34,6 +36,7 @@ h1 {
 }
 
 #main-nav {
+	padding: 0;
 	background-color: rgba(0, 0, 0, 0);
 }
 
@@ -77,6 +80,7 @@ header {
 }
 
 .navbar-toggler {
+	top: 22px;
 	background-color: #f4f4f4;
 	color: #c1c1c1;
 	border-radius: 0px;
@@ -84,6 +88,10 @@ header {
 
 .fa-bars {
 	padding-top: 15%;
+}
+
+h2 span {
+	font-size: 75px;
 }
 
 
@@ -112,7 +120,7 @@ header {
 
 .critics-text h2 {
 	font-size: 36px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 
@@ -251,6 +259,9 @@ footer p {
 		letter-spacing: 3px !important;
 		line-height: 1.6;
 	}
+	h2 span {
+		font-size: 65px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -286,16 +297,17 @@ footer p {
 		width: 100%;
 		object-fit: cover;
 		position: relative;
-		top: -20px;
-		height: auto;
+		top: 20px;
+		height: 60vh;
 	}
 	.navbar-collapse {
 		width: 100%;
 		position: absolute;
-		top: 105px;
+		top: 85px;
 		right: 0;
 		height: 100vh;
-		background-color: rgba(128, 128, 128, 0.93);
+		height: 120vh;
+		background-color: rgb(62, 62, 62) !important;
 	}
 	.navbar-collapse ul {
 		width: 100%;
@@ -311,11 +323,20 @@ footer p {
 	}
 	.navbar-header {
 		position: absolute;
-		top: 20px;
+		top: 0px;
 	}
 	.navbar-header a img {
 		width: 40%;
 		z-index: 2;
+	}
+	/*styles navbar at sm and xs */
+	.navbar-brand {
+		width: 100%;
+		padding: 20px 0;
+		background-color: rgb(62, 62, 62) !important;
+	}
+	.navbar-brand img {
+		margin-left: 10px;
 	}
 	nav ul li a {
 		color: #ffffff;
@@ -326,7 +347,7 @@ footer p {
 	}
 	/* Critics section styling */
 	.critics {
-		padding: 0 2vh;
+		padding: 5vh 0;
 		margin: 0;
 		background-image: url("../img/night.jpg");
 		background-attachment: fixed;
@@ -347,7 +368,7 @@ footer p {
 		font-size: 16px;
 	}
 	.critics-text h2 {
-		font-size: 26px;
+		font-size: 30px;
 		margin-bottom: 30px;
 	}
 	/* Live music and new album sections images styling */
