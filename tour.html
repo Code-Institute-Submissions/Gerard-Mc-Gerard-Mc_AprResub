@@ -11,7 +11,7 @@
       <title>Lankum</title>
    </head>
    <body data-spy="scroll" data-target=".navbar" data-offset="0">
-      <!-- Header Starts Here -->
+       <!-- Header Starts Here -->
       <nav id="main-nav" class="navbar navbar-expand-md sticky-top ">
          <a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
          <!-- Nav Button -->
@@ -38,14 +38,16 @@
             </ul>
          </div>
       </nav>
-      <!-- Nav ends Here -->
-      <section id="tour">
+       <!-- Nav ends Here -->
+      
+       
+     <section id="tour">
          <div id="tour-text" class="container col-12 ">
             <h1 class="container col-12 ">Upcoming Tour</h1>
             <p class="container col-10 col-md-6">No upcoming events scheduled yet.<br>Stay tuned!</p>
          </div>
       </section>
-      <!-- Footer Starts Here -->
+    <!-- Footer Starts Here -->
       <footer class="container-fluid  ">
          <div class="d-flex justify-content-center">
             <ul class="list-inline-item align-middle" >
@@ -62,20 +64,9 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script>
-         window.onscroll = function() {scrollFunction()};
          
-         function scrollFunction() {
-           if (document.body.scrollTop > 40|| document.documentElement.scrollTop > 40) {
+          document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0.74)";
          
-             document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0.74)";
-         
-           } else {
-         
-          document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0)";
-         
-           }
-         
-         }
       </script>
    </body>
 </html>
