@@ -291,6 +291,7 @@ input[type=submit] {
 
 /* Tour Text starts here */
 
+
 #tour {
 	height: 60vh;
 	background-image: url("/assets/img/background-0200.jpg");
@@ -389,7 +390,7 @@ input[type=submit] {
 		width: 100%;
 		object-fit: cover;
 		position: relative;
-		height: 50vh;
+		height: 90vh;
 	}
 	.navbar-collapse {
 		width: 100%;
@@ -570,5 +571,14 @@ input[type=submit] {
 	.row {
 		padding: 0;
 		margin: 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+    	.header-img {
+		width: 100%;
+		object-fit: cover;
+		position: relative;
+		height: 50vh;
 	}
 }
