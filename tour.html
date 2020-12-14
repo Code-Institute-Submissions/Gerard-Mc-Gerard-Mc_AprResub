@@ -10,11 +10,10 @@
       <link rel="stylesheet" href="assets/css/style.css">
       <title>Lankum</title>
    </head>
-   <body id="contact-body" data-spy="scroll" data-target=".navbar" data-offset="0">
-      <nav id="main-nav" class="navbar navbar-expand-md ">
-         <div class="navbar-header d-md-none">
-            <a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
-         </div>
+   <body data-spy="scroll" data-target=".navbar" data-offset="0">
+      <!-- Header Starts Here -->
+      <nav id="main-nav" class="navbar navbar-expand-md sticky-top ">
+         <a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
          <!-- Nav Button -->
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse">
          <span class="navbar-toggler-icon fas fa-bars fa-1x"></span>
@@ -25,13 +24,13 @@
                   <a class="nav-link" href="index.html#live">Live</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="index.html#music">Music</a>
+                  <a class="nav-link" href="#music">Music</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="tour.html">Tour</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" target="_blank"  href="https://www.amazon.co.uk/CDs-Vinyl-Lankum/s?rh=n%3A229816%2Cp_32%3ALankum">Shop</a>
+                  <a class="nav-link" target="_blank" href="https://www.amazon.co.uk/CDs-Vinyl-Lankum/s?rh=n%3A229816%2Cp_32%3ALankum">Shop</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
@@ -39,19 +38,14 @@
             </ul>
          </div>
       </nav>
-      <h2 class="d-none d-md-block"><a href="index.html"></a><img src="assets/img/logo-white.png" alt="Lankum Logo"></h2>
-      <img src="assets/img/background-0200.jpg" class="contact-header-img" alt="Land background image" >
-       
-     <section id="tour">
+      <!-- Nav ends Here -->
+      <section id="tour">
          <div id="tour-text" class="container col-12 ">
             <h1 class="container col-12 ">Upcoming Tour</h1>
             <p class="container col-10 col-md-6">No upcoming events scheduled yet.<br>Stay tuned!</p>
          </div>
       </section>
-       
-       
-       
-        <!-- Footer Starts Here -->
+      <!-- Footer Starts Here -->
       <footer class="container-fluid  ">
          <div class="d-flex justify-content-center">
             <ul class="list-inline-item align-middle" >
@@ -67,5 +61,21 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 40|| document.documentElement.scrollTop > 40) {
+         
+             document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0.74)";
+         
+           } else {
+         
+          document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0)";
+         
+           }
+         
+         }
+      </script>
    </body>
 </html>

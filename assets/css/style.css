@@ -292,24 +292,27 @@ input[type=submit] {
 /* Tour Text starts here */
 
 #tour {
-	height: 500px!important;
+	height: 60vh;
+	background-image: url("/assets/img/background-0200.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #tour-text {
-	position: absolute;
 	color: white;
 	text-align: center;
-	height: 500px;
 }
 
 #tour-text h1 {
-	top: 50px;
+	top: 18vh;
 	font-size: 60px;
 	letter-spacing: 5px;
 }
 
 #tour-text p {
-	top: 80px;
+	top: 20vh;
 	font-size: 20px;
 	letter-spacing: 5px;
 }
@@ -386,12 +389,12 @@ input[type=submit] {
 		width: 100%;
 		object-fit: cover;
 		position: relative;
-		height: 80vh;
+		height: 50vh;
 	}
 	.navbar-collapse {
 		width: 100%;
 		position: absolute;
-		top: 85px;
+		top: 100px;
 		right: 0;
 		height: 100vh;
 		height: 120vh;
@@ -525,25 +528,41 @@ input[type=submit] {
 		color: #c4c4c4;
 		font-size: 30px;
 	}
-	/* contact page styling */
-	/*tour styling starts here */
-	#tour {
-		height: 400px!important;
+	/* Contact Page */
+	#above-form-text h1 {
+		font-weight: 500;
+		top: 80px;
+		font-size: 40px;
+		letter-spacing: 5px;
 	}
-	#tour-text {
-		position: absolute;
+	#above-form-text p {
+		top: 95px;
+		font-size: 15px;
+		letter-spacing: 5px;
+	}
+	#contact-body h2 {
 		color: white;
 		text-align: center;
-		height: 500px;
+		position: absolute;
+		left: 50%;
+		top: -10px;
+		letter-spacing: 4px;
+		transform: translate(-50%, 0%);
+		z-index: 2;
+		font-size: 12px;
+	}
+	/* Tour page */
+	#tour-text {
+		color: white;
+		text-align: center;
 	}
 	#tour-text h1 {
-		top: 200px;
-		left: 0;
-		font-size: 50px;
-		letter-spacing: 0px;
+		top: 15vh;
+		font-size: 40px;
+		letter-spacing: 5px;
 	}
 	#tour-text p {
-		top: 220px;
+		top: 17vh;
 		font-size: 15px;
 		letter-spacing: 5px;
 	}
