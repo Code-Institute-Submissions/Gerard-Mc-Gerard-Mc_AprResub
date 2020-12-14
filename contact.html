@@ -11,10 +11,9 @@
       <title>Lankum</title>
    </head>
    <body id="contact-body" data-spy="scroll" data-target=".navbar" data-offset="0">
-      <nav id="main-nav" class="navbar navbar-expand-md ">
-         <div class="navbar-header d-md-none">
-            <a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
-         </div>
+      <!-- Header Starts Here -->
+      <nav id="main-nav" class="navbar contact-nav navbar-expand-md sticky-top ">
+         <a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
          <!-- Nav Button -->
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse">
          <span class="navbar-toggler-icon fas fa-bars fa-1x"></span>
@@ -25,21 +24,21 @@
                   <a class="nav-link" href="index.html#live">Live</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="index.html#music">Music</a>
+                  <a class="nav-link" href="#music">Music</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="tour.html">Tour</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" target="_blank"  href="https://www.amazon.co.uk/CDs-Vinyl-Lankum/s?rh=n%3A229816%2Cp_32%3ALankum">Shop</a>
+                  <a class="nav-link" target="_blank" href="https://www.amazon.co.uk/CDs-Vinyl-Lankum/s?rh=n%3A229816%2Cp_32%3ALankum">Shop</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
                </li>
             </ul>
          </div>
       </nav>
-      <h2 class="d-none d-md-block"><a href="index.html"></a><img src="assets/img/logo-white.png" alt="Lankum Logo"></h2>
+      <!-- Nav ends Here -->
       <img src="assets/img/background-00-dark.jpg" class="contact-header-img" alt="Lankum band image" >
       <section id="contact-text">
          <div id="above-form-text" class="container col-12 ">
@@ -48,9 +47,10 @@
          </div>
       </section>
       <section id="contact-section" class="container-fluid  col-12">
+         <h2>Get In Touch</h2>
          <form class="container-fluid col-12 col-md-8 " action="#" name="emailform" method="post">
             <label for="fname">First Name</label>
-            <input type="text" id="name" name="name" placeholder="Your first name..">
+            <input type="text" id="fname" name="name" placeholder="Your first name..">
             <label for="surname">Surname</label>
             <input type="text" id="surname" name="surname" placeholder="Your surname..">
             <label style="display: block;" for="email">Email</label>
@@ -76,5 +76,21 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 40|| document.documentElement.scrollTop > 40) {
+         
+             document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0.74)";
+         
+           } else {
+         
+          document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0)";
+         
+           }
+         
+         }
+      </script>
    </body>
 </html>
