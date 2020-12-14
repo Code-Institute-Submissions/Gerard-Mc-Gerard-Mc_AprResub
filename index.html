@@ -11,10 +11,9 @@
       <title>Lankum</title>
    </head>
    <body data-spy="scroll" data-target=".navbar" data-offset="0">
-      <nav id="main-nav" class="navbar navbar-expand-md sticky-top">
-         <div class="navbar-header d-md-none">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
-         </div>
+       <!-- Header Starts Here -->
+      <nav id="main-nav" class="navbar navbar-expand-md sticky-top ">
+         <a class="navbar-brand" href="index.html"><img src="assets/img/logo-white.png" alt="Lankum Logo"></a>
          <!-- Nav Button -->
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse">
          <span class="navbar-toggler-icon fas fa-bars fa-1x"></span>
@@ -39,12 +38,13 @@
             </ul>
          </div>
       </nav>
+       <!-- Nav ends Here -->
+       
+       <!-- Header Starts Here -->
       <header>
-         <!-- Header Starts Here -->
-         <h1 class="d-none d-md-block"><a href="index.html"></a><img src="assets/img/logo-white.png" alt="Lankum Logo"></h1>
+         
          <!-- Header Image Starts Here -->
-         <img src="assets/img/header-optimised-0.jpg" class="d-none d-md-block header-img" alt="Lankum band image" >
-         <img src="assets/img/header-optimised-0.jpg" class="d-block d-md-none header-img" alt="Lankum band image" >
+         <img src="assets/img/header-optimised-0.jpg" class="d-block header-img" alt="Lankum band image" >
          <!-- Header Image Ends Here -->
       </header>
       <!-- Header Ends Here -->
@@ -188,7 +188,7 @@
          
              document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0.74)";
          
-             document.getElementById("nav-change").style.marginTop = "5px";
+             document.getElementById("main-nav").style.height = "65px";
          
            
          
@@ -196,7 +196,7 @@
          
           document.getElementById("main-nav").style.backgroundColor = "rgba(0, 0, 0, 0)";
          
-             document.getElementById("nav-change").style.marginTop = "100px";
+             document.getElementById("main-nav").style.height = "100px";
          
            }
          
