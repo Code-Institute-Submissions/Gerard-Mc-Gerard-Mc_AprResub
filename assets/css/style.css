@@ -333,6 +333,7 @@ input[type=submit] {
 #about-text {
 	color: white;
 	text-align: left;
+	font-weight: bold;
 }
 
 #about-text h1 {
